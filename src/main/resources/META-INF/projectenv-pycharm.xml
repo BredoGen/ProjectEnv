@@ -1,0 +1,6 @@
+<idea-plugin>
+    <extensions defaultExtensionNs="Pythonid">
+        <runConfigurationExtension implementation="com.bredogen.projectenv.run.PyCharmRunConfigurationExtension" id="envfilePyCharm"/>
+        <pythonCommandLineEnvironmentProvider implementation="com.bredogen.projectenv.run.PythonCommandLineEnvironmentProvider" id="envfilePyCharmConsole"/>
+    </extensions>
+</idea-plugin>

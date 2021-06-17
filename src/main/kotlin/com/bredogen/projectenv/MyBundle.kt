@@ -1,4 +1,4 @@
-package com.github.bredogen.projectenv
+package com.bredogen.projectenv
 
 import com.intellij.AbstractBundle
 import org.jetbrains.annotations.NonNls
