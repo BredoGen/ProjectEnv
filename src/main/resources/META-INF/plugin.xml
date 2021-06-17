@@ -9,7 +9,7 @@
 
     <extensions defaultExtensionNs="com.intellij">
         <projectService serviceImplementation="com.bredogen.projectenv.settings.EnvFileSettings"/>
-        <projectConfigurable parentId="build" instance="com.bredogen.projectenv.settings.EnvFileConfigurable" displayName="Project Env File"/>
+        <projectConfigurable parentId="build" instance="com.bredogen.projectenv.settings.EnvFileConfigurable" displayName="ProjectEnv Settings"/>
     </extensions>
 
     <depends optional="true" config-file="projectenv-terminal.xml">org.jetbrains.plugins.terminal</depends>

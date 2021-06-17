@@ -8,7 +8,7 @@ class EnvFileConfigurable(private val project: Project) : Configurable {
     private var settingsComponent: EnvFileSettingsComponent? = null
 
     override fun getDisplayName(): String {
-        return "ProjectEnv"
+        return "ProjectEnv Settings"
     }
 
     override fun getPreferredFocusedComponent(): JComponent {

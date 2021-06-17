@@ -23,7 +23,7 @@ class EnvFileSettingsComponent(private val project: Project) {
     private val mainPanel: JPanel
 
     private var envFilesModel: ListTableModel<EnvFileEntry>
-    private var useEnvFileCheckBox: JCheckBox = JCheckBox("Enable Project Env File")
+    private var useEnvFileCheckBox: JCheckBox = JCheckBox("Enable ProjectEnv")
     private var overrideUserEnvCheckBox: JCheckBox = JCheckBox("Override all user defined env values")
     private var envFilesTable: TableView<EnvFileEntry>
 

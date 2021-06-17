@@ -19,7 +19,7 @@ Also supported:
 * Terminal in IDEA-based products
 
 ## Settings
-<kbd>Settings/Preferences</kbd> > <kbd>Build, Execution, Deployment</kbd> > <kbd>ProjectEnv</kbd> > <kbd>Enable plugin</kbd> > <kbd>Select env files for project</kbd>
+<kbd>Settings/Preferences</kbd> > <kbd>Build, Execution, Deployment</kbd> > <kbd>ProjectEnv Settings</kbd> > <kbd>Enable plugin</kbd> > <kbd>Select env files for the project</kbd>
 
 <!-- Plugin description end -->
 
@@ -37,7 +37,7 @@ Also supported:
 
 
 ---
-WARNING: I'm not a Java/Kotlin developer. The plugin purpose is to solve my own inconvenience while working with 12factor apps in PyCharm.
+**WARNING:** I'm not a Java/Kotlin developer. The plugin purpose is to solve my own inconvenience while working with 12factor apps in PyCharm.
 
 Source code mostly based on [FileEnv](https://github.com/ashald/EnvFile) plugin by Borys Pierov. Special thanks for his great work.
 
