@@ -21,6 +21,8 @@ Also supported:
 ## Settings
 <kbd>Settings/Preferences</kbd> > <kbd>Build, Execution, Deployment</kbd> > <kbd>ProjectEnv Settings</kbd> > <kbd>Enable plugin</kbd> > <kbd>Select env files for the project</kbd>
 
+## Credits
+Source code mostly based on [FileEnv](https://github.com/ashald/EnvFile) plugin by Borys Pierov. Special thanks for his great work.
 <!-- Plugin description end -->
 
 ## Installation
@@ -38,8 +40,6 @@ Also supported:
 
 ---
 **WARNING:** I'm not a Java/Kotlin developer. The plugin purpose is to solve my own inconvenience while working with 12factor apps in PyCharm.
-
-Source code mostly based on [FileEnv](https://github.com/ashald/EnvFile) plugin by Borys Pierov. Special thanks for his great work.
 
 Plugin based on the [IntelliJ Platform Plugin Template][template].
 
