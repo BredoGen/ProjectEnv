@@ -3,6 +3,8 @@
 # ProjectEnv Changelog
 
 ## [Unreleased]
+
+## [0.0.4]
 - IDEA 2021.3 compatibility
 
 ## [0.0.3]
