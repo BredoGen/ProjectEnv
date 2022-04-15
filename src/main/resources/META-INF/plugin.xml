@@ -2,6 +2,7 @@
     <id>com.bredogen.projectenv</id>
     <name>ProjectEnv</name>
     <vendor>Alexander Bayagin</vendor>
+    <idea-version since-build="201"/>
 
     <!-- Product and plugin compatibility requirements -->
     <!-- https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html -->
