@@ -3,6 +3,8 @@
 # ProjectEnv Changelog
 
 ## [Unreleased]
+
+## [0.0.5]
 - 2022.1+ compatibility
 
 ## [0.0.4]
