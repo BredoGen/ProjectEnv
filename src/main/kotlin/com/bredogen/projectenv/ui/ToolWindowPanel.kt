@@ -87,7 +87,7 @@ class ToolWindowPanel(project: Project) : SimpleToolWindowPanel(true, true) {
                         null,
                         -1
                 )
-                popup.show(button.preferredPopupPoint!!)
+                popup.show(button.preferredPopupPoint)
             }
         }
         setContent(toolbarDecorator.createPanel())

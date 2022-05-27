@@ -30,11 +30,11 @@ abstract class EnvFileProvider(private val params : Map<String, String>) : EnvPr
 
     companion object {
         fun createParams(project: Project): Map<String, String> {
-            val fileDescriptor = FileChooserDescriptorFactory.createSingleFileDescriptor()
+            val fileDescriptor = FileChooserDescriptorFactory.createSingleLocalFileDescriptor().withShowHiddenFiles(true)
             fileDescriptor.title = "Choose Env File"
 
             val file: VirtualFile? = FileChooser.chooseFile(fileDescriptor, project, null)
-            if (file != null) {
+            if (file != null && file.isDirectory.not()) {
                 return hashMapOf("path" to file.path)
             }
 
