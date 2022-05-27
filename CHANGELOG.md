@@ -3,6 +3,8 @@
 # ProjectEnv Changelog
 
 ## [Unreleased]
+- Env Files tool window
+- Yaml / JSON support
 
 ## [0.0.5]
 - 2022.1+ compatibility

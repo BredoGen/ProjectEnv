@@ -1,5 +1,5 @@
 <idea-plugin>
     <extensions defaultExtensionNs="com.intellij">
-        <runConfigurationExtension implementation="com.bredogen.projectenv.run.JavaRunConfigurationExtension" id="envfileIdea"/>
+        <runConfigurationExtension implementation="com.bredogen.projectenv.extensions.JavaRunConfigurationExtension" id="envfileIdea"/>
     </extensions>
 </idea-plugin>

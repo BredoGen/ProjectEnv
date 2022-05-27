@@ -1,5 +1,5 @@
 <idea-plugin>
     <extensions defaultExtensionNs="com.goide">
-        <runConfigurationExtension implementation="com.bredogen.projectenv.run.GolandRunConfigurationExtension" id="envfileGo"/>
+        <runConfigurationExtension implementation="com.bredogen.projectenv.extensions.GoRunConfigurationExtension" id="envfileGo"/>
     </extensions>
 </idea-plugin>

@@ -1,5 +1,5 @@
 <idea-plugin>
     <extensions defaultExtensionNs="org.jetbrains.plugins.terminal">
-        <localTerminalCustomizer implementation="com.bredogen.projectenv.customizer.DotEnvTerminalCustomizer"/>
+        <localTerminalCustomizer implementation="com.bredogen.projectenv.customizers.TerminalCustomizer"/>
     </extensions>
 </idea-plugin>

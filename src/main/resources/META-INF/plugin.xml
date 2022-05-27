@@ -1,20 +1,19 @@
+<!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
 <idea-plugin>
     <id>com.bredogen.projectenv</id>
     <name>ProjectEnv</name>
-    <vendor>Alexander Bayagin</vendor>
-    <idea-version since-build="201"/>
+    <vendor>bredogen</vendor>
 
-    <!-- Product and plugin compatibility requirements -->
-    <!-- https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html -->
     <depends>com.intellij.modules.platform</depends>
 
     <extensions defaultExtensionNs="com.intellij">
-        <projectService serviceImplementation="com.bredogen.projectenv.settings.EnvFileSettings"/>
-        <projectConfigurable parentId="build" instance="com.bredogen.projectenv.settings.EnvFileConfigurable" displayName="ProjectEnv Settings"/>
+        <projectService serviceImplementation="com.bredogen.projectenv.services.ProjectEnvService"/>
+        <toolWindow id="Env Files" secondary="false" icon="AllIcons.Toolwindows.ToolWindowCommander" anchor="left" factoryClass="com.bredogen.projectenv.ui.WindowFactory"/>
     </extensions>
 
     <depends optional="true" config-file="projectenv-terminal.xml">org.jetbrains.plugins.terminal</depends>
     <depends optional="true" config-file="projectenv-pycharm.xml">com.intellij.modules.python</depends>
     <depends optional="true" config-file="projectenv-java.xml">com.intellij.java</depends>
     <depends optional="true" config-file="projectenv-go.xml">org.jetbrains.plugins.go</depends>
+
 </idea-plugin>
