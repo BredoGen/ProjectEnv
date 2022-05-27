@@ -2,7 +2,7 @@
 <idea-plugin>
     <id>com.bredogen.projectenv</id>
     <name>ProjectEnv</name>
-    <vendor>bredogen</vendor>
+    <vendor>Alexander Bayagin</vendor>
 
     <depends>com.intellij.modules.platform</depends>
 
