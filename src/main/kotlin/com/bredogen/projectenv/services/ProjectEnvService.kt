@@ -15,6 +15,7 @@ class ProjectEnvService : PersistentStateComponent<ProjectEnvService>, BaseState
 
     var enableTerminal by property(true)
     var enableRunConfiguration by property(true)
+    var includeTestConfiguration by property(true)
 
     override fun getState(): ProjectEnvService {
         return this
