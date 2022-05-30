@@ -9,6 +9,7 @@
     <extensions defaultExtensionNs="com.intellij">
         <projectService serviceImplementation="com.bredogen.projectenv.services.ProjectEnvService"/>
         <toolWindow id="Env Files" secondary="false" icon="AllIcons.Toolwindows.ToolWindowCommander" anchor="left" factoryClass="com.bredogen.projectenv.ui.WindowFactory"/>
+        <notificationGroup id="ProjectEnv" displayType="BALLOON"/>
     </extensions>
 
     <depends optional="true" config-file="projectenv-terminal.xml">org.jetbrains.plugins.terminal</depends>

@@ -23,14 +23,14 @@ class YamlFileProvider(private val params : Map<String, String>) : EnvFileProvid
     override fun getEnvValues(): LinkedHashMap<String, String> {
         val path = params["path"] ?: throw EnvSourceException("No valid path to json/yaml file")
 
-        var result: LinkedHashMap<String, String>?
+        val result: LinkedHashMap<String, String>?
         try {
             result = Yaml().load(Files.readString(Paths.get(path)))
         } catch (ex: IOException) {
             throw EnvSourceException(ex)
         }
         if (result == null) {
-            result = linkedMapOf()
+            throw EnvSourceException("Cannot process file. Malformed format?")
         }
 
         return result

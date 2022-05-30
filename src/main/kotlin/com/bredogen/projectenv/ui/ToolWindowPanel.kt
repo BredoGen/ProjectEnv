@@ -7,12 +7,14 @@ import com.intellij.openapi.actionSystem.AnAction
 import com.intellij.openapi.actionSystem.AnActionEvent
 import com.intellij.openapi.actionSystem.DefaultActionGroup
 import com.intellij.openapi.project.Project
+import com.intellij.openapi.project.guessProjectDir
 import com.intellij.openapi.ui.SimpleToolWindowPanel
 import com.intellij.openapi.ui.popup.JBPopupFactory
 import com.intellij.openapi.ui.popup.ListPopup
 import com.intellij.ui.*
 import com.intellij.ui.components.JBList
 import java.awt.event.MouseEvent
+import java.io.File
 import javax.swing.JList
 import javax.swing.event.ListDataEvent
 import javax.swing.event.ListDataListener
@@ -46,7 +48,8 @@ class ToolWindowPanel(project: Project) : SimpleToolWindowPanel(true, true) {
             override fun customizeCellRenderer(list: JList<*>, value: Any?, index: Int, selected: Boolean, hasFocus: Boolean) {
                 if (value is EnvSourceEntry) {
                     icon = EnvSourceEntry.typeIcons[value.type]
-                    val filePath = value.name.removePrefix(project.basePath.toString())
+                    val projectPath = (project.guessProjectDir()?.path ?: "") + File.separator
+                    val filePath = value.name.removePrefix(projectPath)
 
                     append(filePath)
                     append(" ${value.type}", SimpleTextAttributes.GRAY_SMALL_ATTRIBUTES)
