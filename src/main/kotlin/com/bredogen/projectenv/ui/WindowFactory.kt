@@ -1,5 +1,6 @@
 package com.bredogen.projectenv.ui
 
+import com.bredogen.projectenv.ui.actions.EnvEnableInTestConfigurationToggleAction
 import com.bredogen.projectenv.ui.actions.EnvRunConfigurationToggleAction
 import com.bredogen.projectenv.ui.actions.EnvTerminalToggleAction
 import com.intellij.openapi.actionSystem.DefaultActionGroup
@@ -19,7 +20,8 @@ class WindowFactory : ToolWindowFactory, DumbAware {
         if (toolWindow is ToolWindowEx) {
             toolWindow.setAdditionalGearActions(DefaultActionGroup(listOf(
                     EnvTerminalToggleAction(),
-                    EnvRunConfigurationToggleAction()
+                    EnvRunConfigurationToggleAction(),
+                    EnvEnableInTestConfigurationToggleAction(),
             )))
         }
     }
