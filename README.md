@@ -6,9 +6,11 @@
 
 
 <!-- Plugin description -->
-ProjectEnv plugin provides settings to configure project-wide .env (dotenv) files.
+ProjectEnv plugin provides settings to configure project-wide .env (dotenv)/json/yaml files.
 Environment variables will be applied to:
 * Terminal in all IDEA-based products (tested on Linux, macOS)
+
+Run Configuration support:
 * Python Run Configurations, Python / Django Console
 * Java Run Configurations (IDEA)
 * Go Run Configurations (GoLand)
@@ -16,7 +18,10 @@ Environment variables will be applied to:
 ## Settings
 <kbd>Env Files</kbd> tool window > <kbd>Add your .env/json/yaml files</kbd>
 
-You can also enable/disable plugin in Terminal / Run configurations: <kbd>Env Files</kbd> tool window > <kbd>⚙️</kbd> > Enable in Terminal / Enable in Run Configurations
+You can also toggle plugin features: <kbd>Env Files</kbd> tool window > <kbd>⚙️</kbd>:
+* Enable in Terminal (requires terminal restart)
+* Enable in Run Configurations
+* Also Enable in Test Run Configurations (special thanks to [lirikooda](https://github.com/lirikooda))
 
 ## Credits
 Source code mostly based on [FileEnv](https://github.com/ashald/EnvFile) plugin by Borys Pierov. Special thanks for his great work.
