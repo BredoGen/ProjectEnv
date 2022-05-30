@@ -10,7 +10,7 @@ internal class EnvRunConfigurationToggleAction : DumbAwareToggleAction("Enable i
 
     override fun setSelected(event: AnActionEvent, isSelected: Boolean) {
         event.project?.let {
-            ProjectEnvService.getInstance(it).enableTerminal = isSelected
+            ProjectEnvService.getInstance(it).enableRunConfiguration = isSelected
         }
     }
 }
