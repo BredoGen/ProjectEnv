@@ -28,11 +28,12 @@ class YamlFileProvider(private val params : Map<String, String>) : EnvFileProvid
             result = Yaml().load(Files.readString(Paths.get(path)))
         } catch (ex: IOException) {
             throw EnvSourceException(ex)
+        } catch (ex: java.lang.ClassCastException) {
+            throw EnvSourceException("File content is not String:String map")
         }
         if (result == null) {
             throw EnvSourceException("Cannot process file. Malformed format?")
         }
-
         return result
     }
 }

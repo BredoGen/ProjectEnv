@@ -15,8 +15,12 @@ Run Configuration support:
 * Java Run Configurations (IDEA)
 * Go Run Configurations (GoLand)
 
+[GitHub](https://github.com/BredoGen/ProjectEnv)
+
 ## Settings
 <kbd>Env Files</kbd> tool window > <kbd>Add your .env/json/yaml files</kbd>
+
+For JSON/Yaml files only String:String maps are currently supported.
 
 You can also toggle plugin features: <kbd>Env Files</kbd> tool window > <kbd>⚙️</kbd>:
 * Enable in Terminal (requires terminal restart)
