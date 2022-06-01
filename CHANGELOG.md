@@ -3,6 +3,8 @@
 # ProjectEnv Changelog
 
 ## [Unreleased]
+
+## [0.1.0]
 - Env Files tool window
 - Yaml / JSON support
 
