@@ -1,5 +1,9 @@
 # ProjectEnv
 
+**THIS PLUGIN IS NOT MAINTAINED ANYMORE. I BELEIVE THE ENV FILE SUPPORT MUST BE IN THE IDEA CORE.**
+
+**PLEASE VOTE FOR THE TICKET: https://youtrack.jetbrains.com/issue/PY-5543**
+
 ![Build](https://github.com/BredoGen/ProjectEnv/workflows/Build/badge.svg)
 [![Version](https://img.shields.io/jetbrains/plugin/v/17044-projectenv.svg)](https://plugins.jetbrains.com/plugin/17044)
 [![Downloads](https://img.shields.io/jetbrains/plugin/d/17044.svg)](https://plugins.jetbrains.com/plugin/17044)
